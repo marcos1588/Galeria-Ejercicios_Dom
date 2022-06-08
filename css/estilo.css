@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:sans-serif;
+}
+.galeria{
+	width:450px;
+	margin:100px auto 0;
+	display:grid;
+	grid-template-columns: repeat(3,auto);
+	gap:10px;
+}
+.galeria a,.galeria img{
+	display:block;
+	width:100%;
+}
+.modal{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	background-color:rgba(0,0,0,0.8);
+	display:none;
+	justify-content: center;
+	align-items:center;
+}
+.visible{
+	display:flex;
+}
+.modal a{
+	display:block;
+	color:white;
+	font-size:3em;
+	margin:0 20px;
+}
+.modal img{
+	display:block;
+}
